@@ -1,0 +1,79 @@
+#header_component {
+  height: 90px;
+
+  img {
+    max-width: 60px;
+  }
+
+  .nav-item{
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+
+
+    hr{
+      margin: 0;
+      border-color: var(--tertiaryTextColor);
+      width: 0%;
+      transition: 0.5s;
+    }
+  }
+
+  .nav-item:hover{
+
+    hr{
+      width: 100%;
+      transition: 0.5s;
+    }
+
+  }
+
+  .active-link{
+    hr{
+      width: 100%;
+      transition: 0.5s;
+    }
+
+  }
+}
+
+@media (max-width: 992px) {
+  #header_component {
+    height: unset;
+    min-height: 70px;
+
+    .hamburger-button{
+      border: 1px solid var(--primaryTextColor);
+      color: var(--primaryTextColor);
+      transform: rotate(90deg);
+    }
+
+    .mobile-nav{
+      max-height: 0;
+      transition: 1s;
+      overflow: hidden;
+    }
+
+    .mobile-nav:not(.isMenuCollapsed){
+      max-height: 500px;
+    }
+
+    .nav-item:first-of-type{
+      padding: 20px 0 10px 0;
+    }
+
+    .nav-item{
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .logo{
+      position: absolute;
+      right: 50%;
+      transform: translateX(50%);
+      top: -8px;
+      max-height: 50px;
+    }
+
+  }
+}

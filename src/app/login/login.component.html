@@ -1,0 +1,16 @@
+<div id="login-component" class="container">
+
+  <h2 class="py-4">Bienvenido</h2>
+
+  <p class="mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo nihil fugit praesentium minus enim ea architecto fuga doloremque teneturs nisi quos ad ipsum illum, eum officiis voluptas, dolore libero distinctio.</p>
+
+  <form class="mt-5" [formGroup]="accessForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="password">Clave de acceso</label>
+      <input type="text" formControlName="password" class="form-control" id="password" placeholder="Introduce la clave de acceso">
+      <p *ngIf="accessForm.errors?.incorrect">clave de acceso inválida</p>
+    </div>
+    <button type="submit" class="btn w-100 border-0 tertiaryBgColor primaryTextColor">Entrar</button>
+  </form>
+
+</div>

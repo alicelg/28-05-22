@@ -1,0 +1,59 @@
+<div id="header_component" class="tertiaryBgColor py-3">
+
+  <div class="container">
+
+    <!-- cabecera desktop -->
+    <div class="row d-none d-lg-flex">
+
+      <div class="col-2">
+        <img class="pointer" src="../../assets/images/sello_boda_tertiaryTextColor.png" [routerLink]="['/home']">
+      </div>
+
+      <div class="col-10 d-flex flex-column justify-content-center">
+        <div class="d-flex justify-content-between">
+          <div class="nav-item" [routerLink]="['/nosotros']" [ngClass]="{'active-link': activeUrl=== '/nosotros'}">
+            Nosotros
+            <hr>
+          </div>
+          <div class="nav-item" [routerLink]="['/real-sitio']" [ngClass]="{'active-link': activeUrl==='/real-sitio'}">
+            Real Sitio
+            <hr>
+          </div>
+          <div class="nav-item" [routerLink]="['/palacio-carlos-iii']"
+            [ngClass]="{'active-link': activeUrl==='/palacio-carlos-iii'}">Palacio Carlos III
+            <hr>
+          </div>
+          <div class="nav-item" [routerLink]="['/alojamiento']" [ngClass]="{'active-link': activeUrl==='/alojamiento'}">
+            Alojamiento
+            <hr>
+          </div>
+          <div class="nav-item" [routerLink]="['/confirmar-asistencia']"
+            [ngClass]="{'active-link': activeUrl==='/confirmar-asistencia'}">Confirmar Asistencia
+            <hr>
+          </div>
+          <div class="nav-item" [routerLink]="['/contacto']" [ngClass]="{'active-link': activeUrl==='/contacto'}">
+            Contacto
+            <hr>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- cabecera mobile -->
+  <div class="d-block d-lg-none px-3 position-relative">
+    <div (click)="isMenuCollapsed=!isMenuCollapsed" class="btn hamburger-button" *ngIf="activeUrl!== '/login'">|||</div>
+    <img src="../../assets/images/sello_boda.png" class="logo">
+    <div [ngClass]="{'isMenuCollapsed': isMenuCollapsed}" class="tertiaryBgColor mobile-nav">
+      <div class="nav-item" [routerLink]="['/nosotros']">Nosotros</div>
+      <div class="nav-item" [routerLink]="['/real-sitio']">Real Sitio</div>
+      <div class="nav-item" [routerLink]="['/palacio-carlos-iii']">Palacio Carlos III</div>
+      <div class="nav-item" [routerLink]="['/alojamiento']">Alojamiento</div>
+      <div class="nav-item" [routerLink]="['/confirmar-asistencia']">Confirmar Asistencia</div>
+      <div class="nav-item" [routerLink]="['/contacto']">Contacto</div>
+    </div>
+  </div>
+
+</div>

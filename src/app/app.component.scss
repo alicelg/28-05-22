@@ -1,0 +1,10 @@
+main {
+  // tamaño header - tamaño footer - margin del footer
+  min-height: calc(100vh - 90px - 55px);
+}
+
+@media screen and (max-width: 991px) {
+  main {
+    min-height: calc(100vh - 70px - 55px);
+  }
+}

@@ -1,0 +1,134 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
+
+
+@font-face {
+  font-family: Amorra;
+  src: url(./assets/fonts/Amorra.ttf) format("truetype");
+}
+@font-face {
+  font-family: CastroScript;
+  src: url(./assets/fonts/CastroScript.ttf) format("truetype");
+}
+
+
+:root{
+  /* paleta de colores */
+  --primaryBgColor: #eeeddd;
+  --secondaryBgColor: #9bb48a;
+  --tertiaryBgColor: #80816a;
+  --quaternaryBgColor: #45533f;
+
+  --primaryTextColor: #eeeddd;
+  --secondaryTextColor: #9bb48a;
+  --tertiaryTextColor: #242c21;
+  --quaternaryTextColor: #000000;
+}
+
+main{
+  background-color: var(--primaryBgColor);
+}
+
+.primaryBgColor {
+  background-color: var(--primaryBgColor);
+}
+.secondaryBgColor {
+  background-color: var(--secondaryBgColor);
+}
+.tertiaryBgColor {
+  background-color: var(--tertiaryBgColor);
+}
+.quaternaryBgColor {
+  background-color: var(--quaternaryBgColor);
+}
+
+.primaryTextColor {
+  color: var(--primaryTextColor);
+}
+.secondaryTextColor {
+  color: var(--secondaryTextColor);
+}
+.tertiaryTextColor {
+  color: var(--tertiaryTextColor);
+}
+.quaternaryTextColor {
+  color: var(--quaternaryTextColor);
+}
+
+
+* {
+  color: var(--tertiaryTextColor);
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+body{
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong{
+  color: var(--tertiaryTextColor);
+  font-weight: 500;
+}
+
+a{
+  color: var(--secondaryTextColor);
+  font-style: italic;
+}
+
+a:hover{
+  color: var(--secondaryTextColor);
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Playfair Display', serif;
+}
+
+h1{
+  font-size: 50px;
+}
+
+h2{
+  font-size: 45px;
+  margin-bottom: 12px;
+}
+
+h3{
+  font-size: 35px;
+}
+
+h4{
+  font-size: 30px;
+}
+
+h5{
+  font-size: 25px;
+}
+
+h6{
+  font-size: 20px;
+}
+
+p{
+  margin-bottom: 10px;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+img{
+  max-width: 100%;
+}
+
+.mainImage{
+  max-height: 350px;
+}
